@@ -14,6 +14,14 @@ Python 3.5
 
 如果安装`scipy`失败的话，从[此处](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy)上下载相应的包进行安装。如果需要`mkl`的话，从新从上述URL中下载`numpy + mkl`包安装。
 
+# 机器学习的一般步骤
+1. 定义问题（Define Problem）
+2. 准备训练数据（Prepare Data）
+3. 评估算法（Evaluate Algorithms）
+4. 改善算法结果（Improve Results）
+5. 显示算法结果（Present Results）
+
+
 # 步骤
 整体步骤：
 - Installing the Python and SciPy platform.
