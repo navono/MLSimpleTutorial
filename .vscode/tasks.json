@@ -5,7 +5,7 @@
   "tasks": [
     {
       "taskName": "lint",
-      "command": "autopep8 -i test.py",
+      "command": "autopep8 -i SimpleTutorial.py",
       "type": "shell"
     }
   ]

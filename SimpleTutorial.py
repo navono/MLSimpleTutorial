@@ -1,3 +1,4 @@
+
 # Load libraries
 import pandas
 # from pandas.tools.plotting import scatter_matrix
@@ -12,7 +13,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVM
+from sklearn.svm import SVC
 
 #  Load dataset
 # url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
@@ -74,7 +75,7 @@ models.append(('LDA', LinearDiscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
-models.append(('SVM', SVM()))
+models.append(('SVM', SVC()))
 
 
 # evaluate each model in turn
@@ -107,7 +108,7 @@ print(accuracy_score(Y_validation, knn_predictions))
 print(confusion_matrix(Y_validation, knn_predictions))
 print(classification_report(Y_validation, knn_predictions))
 
-svm = SVM()
+svm = SVC()
 svm.fit(X_train, Y_train)
 svm_predictions = svm.predict(X_validation)
 print(accuracy_score(Y_validation, svm_predictions))
